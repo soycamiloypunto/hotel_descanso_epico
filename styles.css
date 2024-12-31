@@ -1,0 +1,108 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header {
+    background-color: #b3d9ff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #004d99;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #d9f2e6;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #004d99;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007acc;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+section#quienes-somos {
+    background-color: #e6f7ff;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    background-color: #d9f2e6;
+    border: 1px solid #a6c9b8;
+    border-radius: 5px;
+    width: 250px;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #004d99;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+footer {
+    background-color: #b3d9ff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: #004d99;
+}
+
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
